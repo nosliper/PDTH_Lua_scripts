@@ -1,4 +1,0 @@
-local hud = managers.hud:script(PlayerBase.PLAYER_INFO_HUD_FULLSCREEN)
-local s = hud.panel:child("textscroll"):script()
-s.scrolloffset = s.scrolloffset - s.scrollus:line_height()
-s.scroll(s.scrollus)
