@@ -1,0 +1,42 @@
+Config:
+  OutputMode: 1
+  OutputFile: PD2Hook.log
+  PrintOffsets: false
+  ExtraCols: 10
+  ExtraRows: 10
+
+PostRequireScripts:
+ - [lib/setups/gamesetup,                                   lua/update.lua]
+ - [lib/managers/hudmanager,                                lua/update.lua]
+# - [lib/managers/hudmanager,                                lua/menu/manager.lua]
+ - [lib/network/networkgame,                                lua/notesingame.lua]
+ - [lib/network/basenetworksession,                         lua/notesingame.lua]
+ - [lib/managers/menumanager,                               lua/menumanager.lua]
+ - [lib/units/weapons/raycastweaponbase,                    lua/external/botscollision.lua]
+ - [lib/managers/hudmanager,                                lua/external/enhancedchat.lua]
+ - [lib/managers/menu/menunodegui,                          lua/external/enhancedchat.lua]
+ - [lib/managers/menumanager,                               lua/external/enhancedchat.lua]
+ - [lib/managers/systemmenumanager,                         lua/external/dropinmenu.lua]
+ - [lib/states/ingamewaitingforplayers,                     lua/skipintro.lua]
+ - [lib/states/bootupstate,                                 lua/external/skiptomain.lua]
+ - [lib/states/menutitlescreenstate,                        lua/external/skiptomain.lua]
+ - [lib/managers/menumanager,                               lua/external/skiptomain.lua]
+ - [lib/units/beings/player/states/playerstandard,          lua/external/hidewaypoints.lua]
+ - [lib/units/beings/player/states/playerstandard,          lua/ninjaheister.lua]
+# - [lib/managers/enemymanager,                             lua/corpsedespawn.lua]
+ - [lib/managers/challengesmanager,                         lua/external/showachievements.lua]
+ - [lib/managers/localizationmanager,                       lua/external/localization.lua]
+ - [lib/units/weapons/trip_mine/tripminebase,               lua/external/bug_fixes.lua]
+ - [lib/network/extensions/player_team/huskteamaidamage,    lua/external/bug_fixes.lua]
+ - [lib/units/beings/player/playercamera,                   lua/external/bug_fixes.lua]
+ - [lib/managers/menu/menuinput,                            lua/external/bug_fixes.lua]
+ - [lib/managers/trademanager,                              lua/external/bug_fixes.lua]
+ - [lib/network/networkgame,                                lua/external/bug_fixes.lua]
+ - [lib/managers/menu/menulobbyrenderer,                    lua/external/bug_fixes.lua]
+ - [lib/managers/killzonemanager,                           lua/external/bug_fixes.lua]
+ - [lib/managers/hudmanager,                                lua/external/bug_fixes.lua]
+ - [lib/units/enemies/cop/actions/upper_body/copactiontase, lua/external/bug_fixes.lua]
+ - [lib/utils/game_state_machine/gamestatemachine,          lua/external/bug_fixes.lua]
+ - [lib/network/matchmaking/networkmatchmakingsteam,        lua/external/bug_fixes.lua]
+ - [lib/states/ingamelobbymenu,                             lua/external/bug_fixes.lua]
+# - [lib/tweak_data/levelstweakdata,                         lua/levelstweakdata.lua]
